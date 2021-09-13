@@ -502,12 +502,18 @@ div:nth-child(3) {
 }
 
 .about .about-content,
-.hobbies .hobbies-content,
-.contact .contact-content {
+.hobbies .hobbies-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 // section {
@@ -635,18 +641,6 @@ textarea:focus::placeholder {
   color: transparent;
 }
 
-// input {
-//   background: transparent;
-//   border: none;
-//   color: aliceblue;
-// }
-
-// textarea {
-//   background: transparent;
-//   border: none;
-//   color: aliceblue;
-// }
-
 .row100 {
   position: relative;
   width: 100%;
@@ -754,5 +748,22 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
+  color: #eb9f0c;
+}
+
+footer {
+  background: #111;
+  padding: 20px 23px;
+  color: #e7e7e7;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+footer span {
   color: #eb9f0c;
 }
