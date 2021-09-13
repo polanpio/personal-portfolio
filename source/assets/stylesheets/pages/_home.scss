@@ -476,7 +476,7 @@ div:nth-child(3) {
 }
 
 .about .about-content .right .text span {
-  color: #fd1015;
+  color: #eb9f0c;
 }
 
 .about .about-content .right p {
@@ -497,7 +497,7 @@ div:nth-child(3) {
 }
 
 .about .about-content .right a:hover {
-  color: #fd1015;
+  color: #eb9f0c;
   background: none;
 }
 
@@ -524,4 +524,235 @@ section .title {
   letter-spacing: 15px;
   opacity: 0.5;
   transition: all 300ms ease;
+}
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+  text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: #716bf7;
+}
+
+.contact .contact-content .info .head {
+  font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+  color: #333;
+}
+
+.contact .right form .fields {
+  display: flex;
+}
+
+.contact .right form .field,
+.contact .right .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+
+.contact .right form .name {
+  margin-right: 10px;
+}
+
+.contact .right form .email {
+  margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+.contact .right form .button {
+  height: 47px;
+  width: 170px;
+}
+
+.contact .right form .button button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #a79d9e;
+  background: transparent;
+  color: #e7e7e7;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact .right form .button button:hover {
+  color: #eb9f0c;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+// input {
+//   background: transparent;
+//   border: none;
+//   color: aliceblue;
+// }
+
+// textarea {
+//   background: transparent;
+//   border: none;
+//   color: aliceblue;
+// }
+
+.row100 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+}
+
+.row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: .5s;
+}
+
+.row100 .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #a79d9e;
+}
+
+.row100 .inputBox input,
+.row100 .inputBox.textarea textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #121218;
+}
+
+.row100 .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: .5s;
+  pointer-events: none;
+}
+
+.row100 .inputBox input:focus + .text,
+.row100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.row100 .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #a79d9e;
+  transition: .5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.row100 .inputBox input:focus ~ .line,
+.row100 .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.row100 .inputBox.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.row100 .inputBox.textarea textarea {
+  height: 100%;
+  resize: none;
+}
+
+.row100 .inputBox textarea:focus ~ .text,
+.row100 .inputBox textarea:valid ~ .text {
+  top: -35px;
+  left: -10px;
+}
+
+.row100 .inputBox textarea:focus ~ .line,
+.row100 .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+input[type="submit"] {
+  border: 2px solid #a79d9e;
+  background: transparent;
+  color: #e7e7e7;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  color: #eb9f0c;
 }
