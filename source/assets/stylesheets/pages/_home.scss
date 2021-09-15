@@ -808,3 +808,73 @@ footer span {
 .social .social-links .social-link #github:hover {
   color: #333;
 }
+
+
+.project-wrapper {
+  padding: 0 80px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-left img {
+ width: 100%;
+ object-fit: cover;
+}
+
+.project-right {
+  height: 500px;
+  ul {
+    display: flex;
+    list-style-type: none;
+    opacity: 0.5;
+    margin: 24px 0 16px 0;
+  }
+  ul li {
+    margin-right: 16px;
+  }
+  a {
+    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 600;
+    line-height: 1.1;
+    color: #d8d8d8;
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 26px;
+  }
+  p {
+    text-align: right;
+    margin-bottom: 8px;
+  }
+}
+
+.project-description {
+  background: #3B5998;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: justify;
+  letter-spacing: 4px;
+  p {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.project-links {
+  text-align: right;
+  opacity: .7;
+  i {
+    font-size: 32px;
+    margin-right: 16px;
+  }
+}
