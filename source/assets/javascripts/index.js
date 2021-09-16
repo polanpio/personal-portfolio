@@ -1,5 +1,12 @@
 import 'bootstrap';
 
+const scrollUp = () => {
+  const scrollUpBtn = document.querySelector('.scroll-up-btn');
+  if (window.scrollY > 750) {
+    scrollUpBtn.classList.add('.show');
+  }
+};
+
 function init() {
   const style = ['style1', 'style2', 'style3', 'style4'];
   const size = ['size1', 'size1', 'size1', 'size2', 'size3'];
@@ -39,3 +46,4 @@ function init() {
 }
 
 window.onload = init;
+scrollUp();

@@ -193,7 +193,7 @@ section {
   box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff,
     0 0 8px 2px rgba(255, 255, 255, 0.26);
   background-color: #fff;
-  animation-name: lua;
+  animation-name: moon;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 10s;
@@ -329,7 +329,7 @@ section {
   }
 }
 
-@keyframes lua {
+@keyframes moon {
   0% {
     box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff,
       0 0 8px 2px rgba(255, 255, 255, 0.26);
