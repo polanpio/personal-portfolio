@@ -813,34 +813,49 @@ footer span {
 .project-wrapper {
   padding: 0 80px;
   margin-bottom: 80px;
+  // height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .project-left {
-  flex: 60%;
+  flex: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 26px;
+  padding: 26px;
+  margin-bottom: 0;
 }
 
 .project-left.left {
   padding-right: 0;
-  padding-left: 26px;
+  padding: 26px;
 }
 
 .project-left img {
  width: 100%;
  object-fit: cover;
+ filter: grayscale(1);
+ transition: all .3s;
+ border-radius: 8px;
+}
+
+.project-left img:hover {
+  filter: grayscale(0);
 }
 
 .project-right {
-  height: 500px;
+  // height: 500px;
   flex: 35%;
+  padding: 26px;
+  margin-bottom: 0;
   ul {
     display: flex;
     list-style-type: none;
