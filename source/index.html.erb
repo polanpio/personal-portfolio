@@ -1,126 +1,34 @@
 <div class="scroll-up-btn">
-    <i class="fas fa-angle-up"></i>
-  </div>
-  <section class="banner" style="height: 100vh">
-    <div class="night-sky">
-      <div id="title">
-        <div>
-          Piotr
+  <i class="fas fa-angle-up"></i>
+</div>
+<section class="banner" style="height: 100vh">
+  <%= partial "partials/banner" %>
+</section>
+<section class="about" id="about-section" style="height: 100vh; display: flex;">
+  <%= partial "partials/about" %>
+</section>
+<section id="projects-section">
+  <%= partial "partials/projects_aprooft" %>
+  <%= partial "partials/projects_pettoren" %>
+  <%= partial "partials/projects_pokedex" %>
+  <%= partial "partials/projects_simon" %>
+</section>
+<section class="contact" id="contact-section">
+  <%= partial "partials/contact" %>
+</section>
+<div class="social">
+    <div class="social-links">
+        <div class="social-link">
+            <a href="https://www.facebook.com/peter.polanski.52/"><i class="fab fa-facebook" id="facebook"></i></a>
         </div>
-        <div>
-          Polanski
+        <div class="social-link">
+            <a href="https://www.linkedin.com/in/polanski-piotr/"><i class="fab fa-linkedin" id="linkedin"></i></a>
         </div>
-      </div>
-      <div>
-        <p>Full-stack Developer <span>by trade</span> </p>
-        <p>Japanologist <span>by heart</span></p>
-      </div>
-      <div id="subtitle">
-        <div>
-          <a href="#about-section">
-            ABOUT
-          </a>
-        </div>
-        <div>
-          <a href="#projects-section">
-            PROJECTS
-          </a>
-        </div>
-        <div>
-          <a href="#contact-section">
-            CONTACT
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="stars-background"></div>
-    <div class="moon-wrapper">
-      <div class="moon"></div>
-    </div>
-    <div class="commets-wrapper"></div>
-  </section>
-  <section class="about" id="about-section" style="height: 100vh; display: flex;">
-    <div class="max-width">
-      <h2 class="title">About me</h2>
-      <div class="about-content">
-        <div class="column left">
-            <%= image_tag '/assets/images/coder.png', alt: 'Piotr' %>
-        </div>
-        <div class="column right">
-            <div class="text">Hey, I'm Piotr.</div>
-            <p>I've started my journey as a self-thought developer. After year and a half of studing myself,
-                I've decided to join Le Wagon's bootcamp in Tokyo. Well-versed with Ruby and Javascript, I'm looking to kick off my dream career in web development.
-            </p>
-            <a href="#hobbies">Learn more</a>
+        <div class="social-link" style="margin-right: 0px;">
+            <a href="https://github.com/polanpio"><i class="fab fa-github" id="github"></i></a>
         </div>
     </div>
-  </div>
-  </section>
-  <section id="projects-section">
-    <%= partial "projects_aprooft" %>
-    <%= partial "projects_pettoren" %>
-    <%= partial "projects_pokedex" %>
-    <%= partial "projects_simon" %>
-  </section>
-  <section class="contact" id="contact">
-    <div class="max-width">
-      <h2 class="title">Contact me</h2>
-      <div class="contact-content">
-        <div class="column right">
-          <div class="row100">
-            <div class="col">
-              <div class="inputBox">
-              <input type="text" name="" required="required">
-              <span class="text">Name</span>
-              <span class="line"></span>
-            </div>
-          </div>
-          <div class="col">
-          <div class="inputBox">
-          <input type="text" name="" required="required">
-          <span class="text">Email</span>
-          <span class="line"></span>
-          </div>
-          </div>
-          <div class="col">
-          <div class="inputBox">
-          <input type="text" name="" required="required">
-          <span class="text">Subject</span>
-          <span class="line"></span>
-          </div>
-          </div>
-          </div>
-          <div class="row100">
-          <div class="col">
-          <div class="inputBox textarea">
-          <textarea name="" required="required" cols="30" rows="10"></textarea>
-          <span class="text">Message</span>
-          <span class="line"></span>
-          </div>
-          </div>
-          </div>
-          <div class="row100">
-          <div class="col">
-          <input type="submit" value="Send Message">
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="social">
-      <div class="social-links">
-          <div class="social-link">
-              <a href="https://www.facebook.com/peter.polanski.52/"><i class="fab fa-facebook" id="facebook"></i></a>
-          </div>
-          <div class="social-link">
-              <a href="https://www.linkedin.com/in/polanski-piotr/"><i class="fab fa-linkedin" id="linkedin"></i></a>
-          </div>
-          <div class="social-link">
-              <a href="https://github.com/polanpio"><i class="fab fa-github" id="github"></i></a>
-          </div>
-      </div>
-  </div>
-  <footer>
-        <p>Created by <span>piotr</span></p>
-  </footer>
+</div>
+<footer>
+      <p>Created by <span>piotr</span></p>
+</footer>
