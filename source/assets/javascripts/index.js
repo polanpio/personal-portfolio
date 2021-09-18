@@ -1,12 +1,5 @@
 import 'bootstrap';
 
-const scrollUp = () => {
-  const scrollUpBtn = document.querySelector('.scroll-up-btn');
-  if (window.scrollY > 750) {
-    scrollUpBtn.classList.add('.show');
-  }
-};
-
 function init() {
   const style = ['style1', 'style2', 'style3', 'style4'];
   const size = ['size1', 'size1', 'size1', 'size2', 'size3'];
@@ -46,4 +39,32 @@ function init() {
 }
 
 window.onload = init;
-scrollUp();
+
+// We select the element we want to target
+const target = document.querySelector('.night-sky');
+
+const scrollUpBtn = document.querySelector('.scroll-up-btn');
+// const rootElement = document.documentElement;
+
+// eslint-disable-next-line no-unused-vars
+function callback(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      scrollUpBtn.classList.remove('show');
+    } else {
+      scrollUpBtn.classList.add('show');
+    }
+  });
+}
+
+function scrollToTop() {
+  // rootElement.scrollTo({
+  //   top: 0,
+  //   behavior: 'smooth'
+  // });
+  document.body.scrollTop = 0;
+}
+scrollUpBtn.addEventListener('click', scrollToTop);
+
+const observer = new IntersectionObserver(callback);
+observer.observe(target);
