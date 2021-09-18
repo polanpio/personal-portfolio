@@ -14,11 +14,38 @@
 
 @media (max-width: 947px) {
   .max-width {
-    padding: 0 50px;
+    padding: 0 80px;
   }
 
   .max-width {
     max-width: 800px;
+  }
+
+  .banner-wrapper {
+    padding: 100px 180px 0 180px;
+  }
+
+  .banner-text {
+    padding-top: 48px;
+  }
+
+  #subtitle {
+    padding: 56px 56px 0 56px;
+  }
+
+  .project-wrapper {
+    margin-bottom: 0;
+    .reverse-column {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .project-wrapper:nth-child(3) .project {
+    flex-direction: column;
+  }
+
+  .section.contact {
+    height: 65%;
   }
 
   .about .about-content {
@@ -41,7 +68,7 @@
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 675px) {
   .banner-wrapper {
     padding-top: 56px;
   }
