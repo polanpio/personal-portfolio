@@ -1,0 +1,173 @@
+/* responsivnes */
+@media (max-width: 1104px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .banner-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 947px) {
+  .max-width {
+    padding: 0 50px;
+  }
+
+  .max-width {
+    max-width: 800px;
+  }
+
+  .about .about-content {
+    width: 100%;
+  }
+
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .about .about-content .right {
+    flex: 100%;
+  }
+
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 690px) {
+  .banner-wrapper {
+    padding-top: 56px;
+  }
+  #title {
+    text-align: center;
+    padding-top: 32px;
+    line-height: 40px;
+    font-size: 48px;
+    letter-spacing: 10px;
+  }
+  #subtitle {
+    padding-top: 24px;
+    font-size: 18px;
+  }
+  .title-role {
+    font-size: 16px;
+    text-align: center;
+    span {
+      font-size: 10px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .max-width {
+    padding: 0;
+  }
+  section .title {
+    font-size: 32px;
+    letter-spacing: 10px;
+    padding: 0 40px;
+  }
+
+  #about-section {
+    height: auto;
+  }
+
+  .about .about-content .right {
+    padding: 0 40px;
+  }
+
+  .about .about-content .right p {
+    letter-spacing: 1px;
+  }
+
+  .about .about-content .left img {
+    height: 300px;
+  }
+
+  .project-wrapper {
+    padding: 0;
+    margin-bottom: 0;
+    display: block;
+  }
+
+  .project-wrapper:last-child {
+    padding-bottom: 40px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .project-right {
+    margin-bottom: 0;
+    padding: 26px 40px;
+  }
+
+  .project-description p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .project-description {
+    letter-spacing: 1px;
+  }
+
+  .project-links {
+    margin-bottom: 0;
+  }
+
+  .project-links i {
+    font-size: 26px;
+    margin-right: 16px;
+  }
+
+  .project-right ul li {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .project-right ul {
+    margin: 16px 0;
+  }
+
+  .project-right ul li:last-child {
+    margin-right: 0;
+  }
+
+  .project-links i:last-child {
+    margin-right: 0;
+  }
+
+  .project-right.left a, .project-right.left p, .project-links.left {
+    text-align: right;
+  }
+
+  .project-right.left > .project-description p {
+    text-align: justify;
+  }
+
+  .reverse-column {
+    flex-direction: column-reverse;
+  }
+
+  .contact .contact-content {
+    padding: 0 40px;
+  }
+
+  .contact .max-width h2 {
+    margin-bottom: 0;
+  }
+
+  .scroll-up-btn {
+    right: 10px;
+  }
+}
