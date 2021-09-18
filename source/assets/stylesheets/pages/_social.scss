@@ -1,0 +1,36 @@
+.social {
+  margin-bottom: 0px;
+  background: transparent;
+  background: rgba(14,15,41,1);
+  padding-bottom: 48px;
+}
+
+.social .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.social .social-links .social-link {
+  margin-right: 30px;
+  margin-bottom: 0px;
+}
+
+.social .social-links .social-link i {
+  font-size: 64px;
+  color: #d8d8d8;
+  transition: .3s linear;
+}
+
+.social .social-links .social-link #facebook:hover {
+  color: #3B5998;
+}
+
+.social .social-links .social-link #linkedin:hover {
+  color: #007bb5;
+}
+
+.social .social-links .social-link #github:hover {
+  color: #333;
+}

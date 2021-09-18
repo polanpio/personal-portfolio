@@ -1,0 +1,365 @@
+.banner {
+  position: relative;
+}
+
+section, .night-sky {
+  background: linear-gradient(0deg, rgba(14,15,41,1) 0%, #121218 50%, rgba(14,15,41,1) 100%);
+}
+
+.night-sky {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.stars-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: rotate 1000s infinite linear;
+}
+
+.star {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: stars;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.star.style1 {
+  animation-duration: 0.5s;
+  animation-name: stars;
+}
+.star.style2 {
+  animation-duration: 1s;
+  animation-name: stars;
+}
+.star.style3 {
+  animation-duration: 1.5s;
+  animation-name: stars;
+}
+.star.style4 {
+  animation-duration: 2s;
+  animation-name: stars2;
+}
+
+.star.size1 {
+  width: 1px;
+  height: 1px;
+}
+.star.size {
+  width: 2px;
+  height: 2px;
+}
+.star.size3 {
+  width: 3px;
+  height: 3px;
+}
+
+.star.opacity1 {
+  opacity: 1;
+}
+.star.opacity2 {
+  opacity: 0.5;
+}
+.star.opacity3 {
+  opacity: 0.1;
+}
+
+.commet {
+  position: absolute;
+  background-color: #fff;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  transform: rotate(-35deg);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.commet:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 85px solid white;
+  position: absolute;
+  left: 2px;
+  top: 0;
+}
+
+.commet.style1 {
+  animation-name: commetStyle1;
+}
+.commet.style2 {
+  animation-name: commetStyle2;
+}
+.commet.style3 {
+  animation-name: commetStyle3;
+}
+.commet.style4 {
+  animation-name: commetStyle4;
+}
+
+.banner-wrapper {
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 180px 0 180px;
+  flex-wrap: wrap-reverse;
+}
+
+.moon-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff,
+    0 0 8px 2px rgba(255, 255, 255, 0.26);
+  background-color: #fff;
+  animation-name: moon;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+.moon-wrapper .moon {
+  background-image: url("/assets/images/bgMoon.png");
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.4;
+}
+
+@keyframes stars {
+  0% {
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+  }
+}
+
+@keyframes stars2 {
+  0% {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+  }
+  20% {
+    background-color: #ffc4c4;
+    box-shadow: 0 0 10px 0px rgba(255, 196, 196, 1);
+  }
+  80% {
+    background-color: #c4cfff;
+    box-shadow: 0 0 10px 0px rgba(196, 207, 255, 1);
+  }
+  100% {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes commetStyle1 {
+  0% {
+    opacity: 0;
+    right: 300px;
+    top: 100px;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    right: 1000px;
+    top: 600px;
+  }
+}
+
+@keyframes commetStyle2 {
+  0% {
+    opacity: 0;
+    right: 700px;
+    top: 100px;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 1400px;
+    top: 600px;
+  }
+}
+
+@keyframes commetStyle3 {
+  0% {
+    opacity: 0;
+    right: 300px;
+    top: 300px;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 1000px;
+    top: 800px;
+  }
+}
+
+@keyframes commetStyle4 {
+  0% {
+    opacity: 0;
+    right: 700px;
+    top: 300px;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    right: 1400px;
+    top: 800px;
+  }
+}
+
+@keyframes moon {
+  0% {
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff,
+      0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+  50% {
+    box-shadow: 0 0 80px 0px #fff, 0 0 30px -4px #fff,
+      0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+  100% {
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff,
+      0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#title {
+  animation-name: animMenu1;
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 100px;
+  letter-spacing: 15px;
+  opacity: 0.5;
+
+  transition: all 300ms ease;
+}
+
+.title-role {
+  animation-name: animMenu2;
+  font-size: 24px;
+  span {
+    color: #eb9f0c;
+    font-size: 20px;
+  }
+}
+
+#subtitle {
+  animation-name: animMenu3;
+  z-index: 10;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  padding: 56px;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 6px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.24);
+  a {
+    text-decoration: none;
+    color: #e7e7e7;
+    opacity: .7;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #e7e7e7;
+  }
+}
+
+#subtitle div:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+  letter-spacing: 8px;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes animMenu1 {
+  0% {
+    transform: translateY(-26px);
+    opacity: 0;
+  }
+  50%,
+  100% {
+    transform: translateY(0px);
+    opacity: .5;
+  }
+}
+
+@keyframes animMenu2 {
+  0%,
+  25% {
+    transform: translateY(-26px);
+    opacity: 0;
+  }
+  75%,
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes animMenu3 {
+  0%,
+  50% {
+    transform: translateY(-26px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
