@@ -40,11 +40,9 @@ function init() {
 
 window.onload = init;
 
-// We select the element we want to target
 const target = document.querySelector('.night-sky');
 
 const scrollUpBtn = document.querySelector('.scroll-up-btn');
-// const rootElement = document.documentElement;
 
 // eslint-disable-next-line no-unused-vars
 function callback(entries, observer) {
@@ -68,3 +66,12 @@ scrollUpBtn.addEventListener('click', scrollToTop);
 
 const observer = new IntersectionObserver(callback);
 observer.observe(target);
+
+// const sendMsg = () => {
+//   const sendMsgBtn = document.querySelector('.sendMsg');
+//   sendMsgBtn.addEventListener('click', () => {
+//     document.querySelector('form').reset();
+//   });
+// };
+
+// sendMsg();
