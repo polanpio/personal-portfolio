@@ -92,11 +92,15 @@
   text-align: right;
   opacity: .7;
   i {
-    font-size: 32px;
+    font-size: 40px;
     margin-right: 16px;
   }
 }
 
 .project-links.left {
   text-align: left;
+}
+
+a.external-links {
+  width: auto;
 }
