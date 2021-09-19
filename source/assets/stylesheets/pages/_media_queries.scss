@@ -66,6 +66,72 @@
     width: 100%;
     margin-bottom: 35px;
   }
+
+  section.contact {
+    height: auto;
+  }
+
+  .contact .contact-content {
+    margin-bottom: 0;
+  }
+
+  .project-wrapper:last-child {
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 800px) and (max-height: 1280px) {
+  .banner-text {
+    padding-top: 80px;
+  }
+
+  #subtitle {
+    padding: 80px 56px 0 56px;
+    font-size: 32px;
+  }
+
+  section .title {
+    font-size: 64px;
+  }
+
+  .contact .contact-content .column {
+    width: 90%;
+  }
+
+  .project-links i {
+    font-size: 40px;
+  }
+
+  #about-section {
+    height: auto;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 769px) and (max-height: 1025px) {
+  .banner {
+    height: auto;
+    padding-bottom: 120px;
+  }
+
+  .night-sky {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 741px) and (max-height: 360px) {
+  .banner {
+    height: auto;
+  }
+
+  #subtitle {
+    margin-bottom: 0;
+    padding-bottom: 56px;
+  }
+
+  .night-sky {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 675px) {
@@ -196,5 +262,94 @@
 
   .scroll-up-btn {
     right: 10px;
+  }
+
+  .contact .contact-content .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  .banner-text {
+    padding-top: 0;
+  }
+
+  .banner-moon {
+    margin-bottom: 0;
+  }
+
+  section .title {
+    font-size: 40px;
+  }
+
+  .project-left,
+  .project-left.left {
+    padding: 26px 40px;
+  }
+
+  .contact-content {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 376px) and (max-height: 812px) {
+  .banner-text {
+    padding-top: 40px;
+  }
+
+  section .title {
+    font-size: 32px;
+  }
+
+  section.contact {
+    height: auto;
+  }
+
+  .project-wrapper:last-child {
+    padding-bottom: 0;
+  }
+
+}
+
+@media (max-width: 376px) and (max-height: 668px) {
+
+  section .title {
+    font-size: 32px;
+  }
+
+  .banner-text {
+    padding-top: 0;
+  }
+
+  #subtitle {
+    padding-top: 0;
+  }
+
+  .banner-moon {
+    margin-bottom: 0;
+  }
+
+  .social {
+    padding-bottom: 0;
+  }
+
+  section.contact {
+    height: auto;
+  }
+
+  .social-links {
+    padding-bottom: 40px;
+  }
+
+  .contact .contact-content .column {
+    margin-bottom: 24px;
+  }
+
+  .contact .contact-content {
+    margin-bottom: 0;
+  }
+
+  .project-wrapper:last-child {
+    padding-bottom: 24px;
   }
 }
