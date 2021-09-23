@@ -1,5 +1,15 @@
 import 'bootstrap';
 
+const collapseAbout = () => {
+  const collapseBtn = document.getElementById('collapse-button');
+  const collapseSection = document.getElementById('about-collapse-section');
+  collapseBtn.addEventListener('click', () => {
+    collapseSection.classList.toggle('show');
+  });
+};
+
+collapseAbout();
+
 function init() {
   const style = ['style1', 'style2', 'style3', 'style4'];
   const size = ['size1', 'size1', 'size1', 'size2', 'size3'];

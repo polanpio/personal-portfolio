@@ -1,0 +1,45 @@
+.about-collapse {
+  display: none;
+}
+
+.about-collapse.show {
+  display: block;
+}
+
+
+#about-collapse-section {
+  padding-bottom: 80px;
+  letter-spacing: 1px;
+  h3 {
+    opacity: .7;
+    font-size: 26px;
+  }
+}
+
+.about-collapse-info {
+  display: flex;
+  margin-bottom: 0;
+  justify-content: space-evenly;
+  border: 1px solid #e7e7e7;
+  padding: 56px 0;
+  border-radius: 8px;
+  li, p {
+    padding-left: 8px;
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  span {
+    color: #eb9f0c;
+  }
+}
+
+.things-enjoy ul {
+  list-style-type: none;
+}
+
+.about-collapse-languges i {
+  font-size: 32px;
+  opacity: .8;
+}
