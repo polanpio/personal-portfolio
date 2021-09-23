@@ -9,7 +9,7 @@
 
 #about-collapse-section {
   padding-bottom: 80px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   h3 {
     opacity: .7;
     font-size: 26px;
@@ -20,6 +20,8 @@
   display: flex;
   margin-bottom: 0;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
   border: 1px solid #e7e7e7;
   padding: 56px 0;
   border-radius: 8px;
@@ -37,6 +39,13 @@
 
 .things-enjoy ul {
   list-style-type: none;
+}
+
+.things-enjoy ul li i {
+  width: 30px;
+  text-align: center;
+  opacity: .7;
+  margin-right: 8px;
 }
 
 .about-collapse-languges i {
