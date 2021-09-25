@@ -40,9 +40,9 @@
     }
   }
 
-  .project-wrapper:nth-child(3) .project {
-    flex-direction: column;
-  }
+  // .project-wrapper:nth-child(3) .project {
+  //   flex-direction: column;
+  // }
 
   .section.contact {
     height: 65%;
@@ -116,6 +116,40 @@
 
   .night-sky {
     margin-bottom: 0;
+  }
+
+  .about .about-content .right p {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .about-collapse-info li, .about-collapse-info p {
+    font-size: 16px;
+  }
+
+  .about-collapse-info {
+    padding: 16px;
+  }
+
+  .about-collapse .max-width {
+    padding: 0 40px;
+  }
+
+  #about-collapse-section h3 {
+    font-size: 20px;
+  }
+
+  .about-collapse-info h5 {
+    font-size: 18px;
+  }
+
+  .about-collapse-languges i {
+    font-size: 26px;
+  }
+
+  .skill-icon-container,
+  .about-collapse-languges h5 {
+    padding-left: 8px;
   }
 }
 
