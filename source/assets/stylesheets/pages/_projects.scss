@@ -15,6 +15,10 @@
   flex-wrap: wrap;
 }
 
+.project.reverse-column {
+  flex-direction: column-reverse;
+}
+
 .project-left {
   flex: 50%;
   display: flex;

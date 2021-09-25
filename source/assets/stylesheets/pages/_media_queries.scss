@@ -10,6 +10,9 @@
   .banner-wrapper {
     justify-content: center;
   }
+  .project-right {
+    flex: auto;
+  }
 }
 
 @media (max-width: 947px) {
@@ -35,11 +38,11 @@
 
   .project-wrapper {
     margin-bottom: 0;
-    .reverse-column {
-      flex-direction: column-reverse;
-    }
   }
 
+  // .reverse-column {
+  //   flex-direction: column-reverse;
+  // }
   // .project-wrapper:nth-child(3) .project {
   //   flex-direction: column;
   // }
@@ -117,6 +120,7 @@
   .night-sky {
     margin-bottom: 0;
   }
+}
 
 @media (max-width: 741px) and (max-height: 360px) {
   .banner {
@@ -260,9 +264,9 @@
     text-align: justify;
   }
 
-  .reverse-column {
-    flex-direction: column-reverse;
-  }
+  // .reverse-column {
+  //   flex-direction: column-reverse;
+  // }
 
   .contact .contact-content {
     padding: 0 40px;
@@ -279,40 +283,39 @@
   .contact .contact-content .column {
     width: 100%;
   }
-}
 
-.about-collapse-info li, .about-collapse-info p {
-  font-size: 16px;
-}
+  .about-collapse-info li, .about-collapse-info p {
+    font-size: 16px;
+  }
 
-.about-collapse-info li i {
-  width: 20px;
-}
+  .about-collapse-info li i {
+    width: 20px;
+  }
 
-.about-collapse-info {
-  padding: 16px;
-}
+  .about-collapse-info {
+    padding: 16px;
+  }
 
-.about-collapse .max-width {
-  padding: 0 40px;
-}
+  .about-collapse .max-width {
+    padding: 0 40px;
+  }
 
-#about-collapse-section h3 {
-  font-size: 20px;
-}
+  #about-collapse-section h3 {
+    font-size: 20px;
+  }
 
-.about-collapse-info h5 {
-  font-size: 18px;
-}
+  .about-collapse-info h5 {
+    font-size: 18px;
+  }
 
-.about-collapse-languges i {
-  font-size: 26px;
-}
+  .about-collapse-languges i {
+    font-size: 26px;
+  }
 
-.skill-icon-container,
-.about-collapse-languges h5 {
-  padding-left: 8px;
-}
+  .skill-icon-container,
+  .about-collapse-languges h5 {
+    padding-left: 8px;
+  }
 }
 
 @media (max-width: 415px) {
