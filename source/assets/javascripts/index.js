@@ -5,6 +5,11 @@ const collapseAbout = () => {
   const collapseSection = document.getElementById('about-collapse-section');
   collapseBtn.addEventListener('click', () => {
     collapseSection.classList.toggle('show');
+    collapseSection.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+      inline: 'center'
+    });
   });
 };
 
