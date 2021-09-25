@@ -13,6 +13,10 @@
   .project-right {
     flex: auto;
   }
+
+  .project.reverse-column {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 947px) {
