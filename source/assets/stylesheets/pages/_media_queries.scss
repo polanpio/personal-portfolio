@@ -169,6 +169,11 @@
 
   #about-section {
     height: auto;
+    padding-bottom: 40px;
+  }
+
+  #about-collapse-section {
+    padding-bottom: 40px;
   }
 
   .about .about-content .right {
@@ -216,10 +221,17 @@
 
   .project-links {
     margin-bottom: 0;
+    a {
+      margin-bottom: 0;
+    }
+  }
+
+  .project-links a:first-child {
+    padding-right: 8px;
   }
 
   .project-links i {
-    font-size: 26px;
+    font-size: 32px;
     margin-right: 16px;
   }
 
