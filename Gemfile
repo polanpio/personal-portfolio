@@ -9,6 +9,8 @@ gem 'rubocop'
 
 gem 'font-awesome-sass', '~> 5.13.0'
 
+gem 'middleman-meta-tags'
+
 group :test do
   gem 'capybara'
   gem 'cucumber'

@@ -1,0 +1,6 @@
+og:
+  project_name: "piotr polanski - Web Developer"
+  title: "piotr polanski - Web Developer"
+  description: "Hey, I'm piotr. I'm a fullstack developer working with Ruby on Rails. Learn more about me and what I do on this website."
+  image: "portfolio_preview.jpg"
+  keywords: %w(developer fullstack RubyOnRails Javascript).join(', ')
